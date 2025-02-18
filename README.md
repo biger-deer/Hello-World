@@ -4,4 +4,4 @@ try to make my first repository
 2025.02.17@zhanglu
 
 ### 2025.02.18@zhanglu
-这里对应一个修改，想要看看通过分支pull request的流程是否正常
+这里对应一个修改，想要看看通过其他分支push到主分支是否默认可以
