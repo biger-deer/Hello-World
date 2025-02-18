@@ -1,0 +1,32 @@
+name: Python 测试类
+
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支的 push 事件
+
+jobs:
+  test:
+    runs-on: ubuntu-latest # 使用最新的 Ubuntu 系统
+
+    steps:
+    # 1. 检出代码（将仓库代码下载到虚拟机）
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # 2. 设置 Python 环境
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.8'  # 使用 Python 3.8 版本
+
+    # 3. 安装依赖
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+#        pip install -r requirements.txt
+
+    # 4. 运行测试
+    - name: Run tests
+      run: |
+        python -m unittest discover
