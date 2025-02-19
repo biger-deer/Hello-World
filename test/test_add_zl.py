@@ -20,6 +20,9 @@ class TestAddFunction(unittest.TestCase):
     def test_add_zero(self):
         self.assertEqual(add(0, 0), 0)
 
+    def test_status_check(self):
+        self.assertEqual(2, 5)
+
 if __name__ == '__main__':
     unittest.main()
 
