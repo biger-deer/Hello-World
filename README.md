@@ -8,3 +8,6 @@ try to make my first repository
 
 ### 2025.02.19@zhanglu
 这里对应一个修改，想要看看在设置了禁止直接push到main分支的情况下，本地main分支是否可以直接push到远程的mian分支
+
+### 2025.02.19@zhanglu
+这里对应一个修改，想要看看 ”需要通过状态检查才能push到main“ 的设置是否生效
