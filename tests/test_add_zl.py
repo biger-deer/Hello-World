@@ -21,7 +21,7 @@ class TestAddFunction(unittest.TestCase):
         self.assertEqual(add(0, 0), 0)
 
     def test_github_status_check(self):
-        self.assertEqual(1, 0)
+        self.assertEqual(1, 0) # 这条测试github action 必须失败
 
 if __name__ == '__main__':
     unittest.main()
