@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # 监听 main 分支的 push 事件
+  pull_request:
+    branches: [ main ]  # 针对 main 分支的 Pull Request 触发
 
 jobs:
   test:
