@@ -32,4 +32,4 @@ jobs:
     # 4. 运行测试
     - name: Run tests
       run: |
-        python -m unittest discover -v 
+        python -m unittest discover -s tests -v 
